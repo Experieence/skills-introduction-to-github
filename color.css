@@ -1,0 +1,81 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5b2cac; /* Purple background */
+    color: #ffffff; /* White text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling for the form container */
+form {
+    background-color: #ffffff; /* White background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 400px;
+    color: #5b2cac; /* Purple text color */
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #5b2cac; /* Purple border */
+    font-size: 14px;
+    color: #5b2cac;
+}
+
+form input[type="text"]::placeholder {
+    color: #999;
+    font-size: 12px;
+}
+
+/* Styling for the submit button */
+form button {
+    background-color: #ffcc00; /* Yellow button */
+    color: #5b2cac; /* Purple text */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #e6b800; /* Slightly darker yellow on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    form {
+        padding: 15px 20px;
+    }
+
+    form label {
+        font-size: 12px;
+    }
+
+    form input[type="text"] {
+        font-size: 12px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}
